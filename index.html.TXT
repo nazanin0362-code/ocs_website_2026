@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oxin Caspian Business Group</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* تغییر رنگ دکمه‌ها بعد از کلیک */
+      .clicked { background-color: #2ecc71 !important; color: white !important; }
+      /* دکمه‌ها */
+      .button { cursor: pointer; display: inline-block; padding: 12px 20px; margin: 5px; border-radius: 6px; background-color: #3498db; color: white; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="group">
+        <div class="frame">
+          <img class="image" src="img/image-1.png" alt="Hero Image" />
+          <div class="logo">
+            <img class="img" src="img/image-5.png" alt="Logo" />
+            <p>o . c . s</p>
+          </div>
+          <div class="language-switch">
+            <div class="button" id="en">EN</div>
+            <div class="button" id="fa">FA</div>
+            <div class="button" id="ar">AR</div>
+          </div>
+
+          <p class="p">Want to grow your business in international markets?</p>
+          <p>We know the way.</p>
+          <p>
+            With decades of experience in international trade and business consulting, we provide professional guidance
+            and strategic insights to help you make informed decisions and establish a strong presence in global markets.
+          </p>
+
+          <div class="buttons">
+            <div class="button" id="consultation">Request Consultation</div>
+            <div class="button" id="contact">Contact us</div>
+            <div class="button" id="whatsapp">WhatsApp</div>
+            <div class="button" id="instagram">Instagram</div>
+            <div class="button" id="gmail">Gmail</div>
+            <div class="button" id="call">Call</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // لینک‌ها برای دکمه‌ها
+      document.getElementById("call").onclick = function() {
+        window.location.href = "tel:+989120851432";
+        this.classList.add("clicked");
+      };
+      document.getElementById("whatsapp").onclick = function() {
+        window.open("https://wa.me/989120851432", "_blank");
+        this.classList.add("clicked");
+      };
+      document.getElementById("instagram").onclick = function() {
+        window.open("https://www.instagram.com/OCS.COMPANY", "_blank");
+        this.classList.add("clicked");
+      };
+      document.getElementById("gmail").onclick = function() {
+        window.location.href = "mailto:parvareshgroup@gmail.com";
+        this.classList.add("clicked");
+      };
+      document.getElementById("consultation").onclick = function() {
+        window.open("https://wa.me/989120851432", "_blank");
+        this.classList.add("clicked");
+      };
+      document.getElementById("contact").onclick = function() {
+        window.location.href = "tel:+989120851432";
+        this.classList.add("clicked");
+      };
+    </script>
+  </body>
+</html>
